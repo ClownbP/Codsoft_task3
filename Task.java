@@ -69,7 +69,7 @@ class ATM {
                         }
                     } else {
                         System.out.println("Invalid input. Please enter a numeric amount.");
-                        scanner.next(); // Clear invalid input
+                        scanner.next();
                     }
                     break;
                 case "2":
@@ -83,7 +83,7 @@ class ATM {
                         }
                     } else {
                         System.out.println("Invalid input. Please enter a numeric amount.");
-                        scanner.next(); // Clear invalid input
+                        scanner.next();
                     }
                     break;
                 case "3":
