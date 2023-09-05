@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 class BankAccount {
@@ -103,7 +104,12 @@ class ATM {
 
 public class Task {
     public static void main(String[] args) {
-        BankAccount account = new BankAccount("123456789", 1000.0);
+
+        Random rand = new Random();
+        int x = rand.nextInt(100000, 100000000);
+        String str = Integer.toString(x);
+        int y = rand.nextInt(0, 10000);
+        BankAccount account = new BankAccount(str, y);
         ATM atm = new ATM(account);
         atm.run();
     }
